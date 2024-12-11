@@ -1,0 +1,66 @@
+2024-12-09 21:35:34,138 - WARNING - Users database not found, creating a new one.
+2024-12-09 21:46:06,816 - WARNING - Users database not found, creating a new one.
+2024-12-09 21:46:06,817 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-09 21:47:20,368 - WARNING - Users database not found, creating a new one.
+2024-12-09 21:47:20,369 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-09 21:49:51,833 - WARNING - Users database not found, creating a new one.
+2024-12-09 21:49:51,834 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-09 21:49:56,654 - WARNING - Users database not found, creating a new one.
+2024-12-09 21:49:56,655 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-09 23:00:55,874 - WARNING - Users database not found, creating a new one.
+2024-12-09 23:00:55,876 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-09 23:45:21,225 - WARNING - Users database not found, creating a new one.
+2024-12-09 23:45:21,229 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 00:15:24,172 - WARNING - Users database not found, creating a new one.
+2024-12-10 00:15:24,175 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 00:25:01,227 - WARNING - Users database not found, creating a new one.
+2024-12-10 00:25:01,230 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 00:25:03,913 - WARNING - Users database not found, creating a new one.
+2024-12-10 00:25:03,915 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 00:56:08,149 - WARNING - Users database not found, creating a new one.
+2024-12-10 00:56:08,150 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 00:58:43,215 - WARNING - Users database not found, creating a new one.
+2024-12-10 00:58:43,216 - ERROR - Failed to load SSL context: [Errno 2] No such file or directory
+2024-12-10 01:04:07,065 - WARNING - Users database not found, creating a new one.
+2024-12-10 01:04:07,082 - INFO - SSL context loaded successfully.
+2024-12-10 01:04:07,083 - INFO - Server started, waiting for connections...
+2024-12-10 01:08:35,134 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:08:35,134 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:08:35,142 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:09:06,131 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:09:06,131 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:09:06,131 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:10:14,631 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:10:14,631 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:10:29,694 - WARNING - Users database not found, creating a new one.
+2024-12-10 01:10:29,698 - INFO - SSL context loaded successfully.
+2024-12-10 01:10:29,699 - INFO - Server started, waiting for connections...
+2024-12-10 01:17:28,194 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:17:28,194 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:17:28,194 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:19:16,736 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:19:16,737 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:22:22,007 - WARNING - Users database not found, creating a new one.
+2024-12-10 01:22:22,019 - INFO - SSL context loaded successfully.
+2024-12-10 01:22:22,020 - INFO - Server started, waiting for connections...
+2024-12-10 01:22:30,153 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:22:30,153 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:22:34,626 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-10 01:22:34,626 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:11:14,307 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:11:14,331 - INFO - SSL context loaded successfully.
+2024-12-11 19:11:14,332 - INFO - Server started, waiting for connections...
+2024-12-11 19:12:00,597 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:12:00,600 - INFO - SSL context loaded successfully.
+2024-12-11 19:12:00,601 - INFO - Server started, waiting for connections...
+2024-12-11 19:12:09,875 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:12:09,876 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:12:21,706 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:12:21,709 - INFO - SSL context loaded successfully.
+2024-12-11 19:12:21,710 - INFO - Server started, waiting for connections...
+2024-12-11 19:12:24,709 - ERROR - Error accepting connection: [SSL: SSLV3_ALERT_BAD_CERTIFICATE] sslv3 alert bad certificate (_ssl.c:1020)
+2024-12-11 19:12:26,638 - ERROR - Error accepting connection: [SSL: SSLV3_ALERT_BAD_CERTIFICATE] sslv3 alert bad certificate (_ssl.c:1020)
+2024-12-11 19:12:27,811 - ERROR - Error accepting connection: [SSL: SSLV3_ALERT_BAD_CERTIFICATE] sslv3 alert bad certificate (_ssl.c:1020)
+2024-12-11 19:15:00,736 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:15:00,740 - INFO - SSL context loaded successfully.
+2024-12-11 19:15:00,740 - INFO - Server started, waiting for connections...

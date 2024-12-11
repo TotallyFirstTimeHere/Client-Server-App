@@ -1,0 +1,20 @@
+2024-12-10 01:04:42,666 - INFO - Connected to server with SSL.
+2024-12-10 01:08:37,004 - INFO - Connected to server with SSL.
+2024-12-10 01:09:34,697 - INFO - Connected to server with SSL.
+2024-12-10 01:10:32,677 - INFO - Connected to server with SSL.
+2024-12-10 01:19:12,010 - INFO - Connected to server with SSL.
+2024-12-10 01:19:34,028 - ERROR - Connection error: [Errno 11001] getaddrinfo failed
+2024-12-10 01:19:35,503 - ERROR - Connection error: [Errno 11001] getaddrinfo failed
+2024-12-10 01:19:41,192 - ERROR - Connection error: [Errno 11001] getaddrinfo failed
+2024-12-10 01:19:42,392 - ERROR - Connection error: [Errno 11001] getaddrinfo failed
+2024-12-10 01:19:52,206 - ERROR - Connection error: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-12-10 01:22:25,651 - INFO - Connected to server with SSL.
+2024-12-10 01:22:31,781 - INFO - Connected to server with SSL.
+2024-12-11 19:11:18,828 - INFO - Connected to server with SSL.
+2024-12-11 19:11:56,643 - ERROR - Error during communication: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:11:56,644 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:12:04,681 - INFO - Connected to server with SSL.
+2024-12-11 19:12:24,708 - ERROR - Connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '127.0.0.1'. (_ssl.c:1020)
+2024-12-11 19:12:26,638 - ERROR - Connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '127.0.0.1'. (_ssl.c:1020)
+2024-12-11 19:12:27,811 - ERROR - Connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '127.0.0.1'. (_ssl.c:1020)
+2024-12-11 19:15:11,582 - INFO - Connected to server with SSL.
