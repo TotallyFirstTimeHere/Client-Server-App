@@ -64,3 +64,403 @@
 2024-12-11 19:15:00,736 - WARNING - Users database not found, creating a new one.
 2024-12-11 19:15:00,740 - INFO - SSL context loaded successfully.
 2024-12-11 19:15:00,740 - INFO - Server started, waiting for connections...
+2024-12-11 19:28:06,840 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:28:06,840 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:31:15,806 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:31:15,809 - INFO - SSL context loaded successfully.
+2024-12-11 19:31:15,810 - INFO - Server started, waiting for connections...
+2024-12-11 19:37:52,557 - WARNING - Users database not found, creating a new one.
+2024-12-11 19:37:52,561 - INFO - SSL context loaded successfully.
+2024-12-11 19:37:52,562 - CRITICAL - Server failed to start: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-11 19:37:55,160 - INFO - Users database loaded successfully.
+2024-12-11 19:37:55,163 - INFO - SSL context loaded successfully.
+2024-12-11 19:37:55,164 - CRITICAL - Server failed to start: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-11 19:38:06,190 - INFO - Users database loaded successfully.
+2024-12-11 19:38:06,193 - INFO - SSL context loaded successfully.
+2024-12-11 19:38:06,194 - CRITICAL - Server failed to start: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-11 19:38:24,922 - INFO - Users database loaded successfully.
+2024-12-11 19:38:24,925 - INFO - SSL context loaded successfully.
+2024-12-11 19:38:24,927 - INFO - Server started, waiting for connections...
+2024-12-13 03:58:51,118 - INFO - Users database loaded successfully.
+2024-12-13 03:58:51,142 - INFO - SSL context loaded successfully.
+2024-12-13 03:58:51,143 - INFO - Server started, waiting for connections...
+2024-12-13 04:01:26,547 - INFO - Users database loaded successfully.
+2024-12-13 04:01:26,550 - INFO - SSL context loaded successfully.
+2024-12-13 04:01:26,550 - INFO - Server started, waiting for connections...
+2024-12-13 04:01:37,570 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:01:37,571 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:02:10,775 - INFO - Users database loaded successfully.
+2024-12-13 04:02:10,778 - INFO - SSL context loaded successfully.
+2024-12-13 04:02:10,779 - INFO - Server started, waiting for connections...
+2024-12-13 04:02:15,467 - INFO - New connection from ('127.0.0.1', 59833)
+2024-12-13 04:02:15,467 - INFO - Active connections: 1
+2024-12-13 04:02:39,181 - INFO - New connection from ('127.0.0.1', 59834)
+2024-12-13 04:02:39,181 - INFO - Active connections: 2
+2024-12-13 04:02:50,950 - WARNING - Invalid option received: register
+2024-12-13 04:03:14,563 - INFO - Users database saved successfully.
+2024-12-13 04:03:14,563 - INFO - New user registered: Logan.
+2024-12-13 04:03:14,563 - INFO - Logan connected from ('127.0.0.1', 59834).
+2024-12-13 04:04:22,564 - INFO - Users database loaded successfully.
+2024-12-13 04:04:22,567 - INFO - SSL context loaded successfully.
+2024-12-13 04:04:22,567 - CRITICAL - Server failed to start: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-13 04:04:24,803 - INFO - New connection from ('127.0.0.1', 59839)
+2024-12-13 04:04:24,804 - INFO - Active connections: 2
+2024-12-13 04:04:51,678 - INFO - Users database saved successfully.
+2024-12-13 04:04:51,679 - INFO - New user registered: YoYo.
+2024-12-13 04:04:51,679 - INFO - YoYo connected from ('127.0.0.1', 59839).
+2024-12-13 04:04:59,204 - ERROR - Error with client YoYo: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:04:59,204 - INFO - YoYo disconnected.
+2024-12-13 04:05:12,896 - ERROR - Error with client Logan: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:05:12,896 - INFO - Logan disconnected.
+2024-12-13 04:07:02,172 - INFO - Users database loaded successfully.
+2024-12-13 04:07:02,175 - INFO - SSL context loaded successfully.
+2024-12-13 04:07:02,176 - INFO - Server started, waiting for connections...
+2024-12-13 04:07:14,406 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:07:14,406 - ERROR - Error accepting connection: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:08:20,237 - INFO - Users database loaded successfully.
+2024-12-13 04:08:20,241 - INFO - SSL context loaded successfully.
+2024-12-13 04:08:20,241 - INFO - Server started, waiting for connections...
+2024-12-13 04:08:22,994 - INFO - New connection from ('127.0.0.1', 59865)
+2024-12-13 04:08:22,994 - INFO - Active connections: 1
+2024-12-13 04:09:09,583 - WARNING - Failed login attempt for username: Paul.
+2024-12-13 04:09:26,326 - INFO - New connection from ('127.0.0.1', 59878)
+2024-12-13 04:09:26,326 - INFO - Active connections: 1
+2024-12-13 04:09:40,530 - INFO - Users database saved successfully.
+2024-12-13 04:09:40,531 - INFO - New user registered: LOL.
+2024-12-13 04:09:40,531 - INFO - LOL connected from ('127.0.0.1', 59878).
+2024-12-13 04:09:49,589 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:09:49,589 - INFO - LOL disconnected.
+2024-12-13 04:09:54,989 - INFO - New connection from ('127.0.0.1', 59891)
+2024-12-13 04:09:54,990 - INFO - Active connections: 1
+2024-12-13 04:10:01,852 - INFO - LOL successfully logged in.
+2024-12-13 04:10:01,853 - INFO - LOL connected from ('127.0.0.1', 59891).
+2024-12-13 04:19:53,276 - INFO - Users database loaded successfully.
+2024-12-13 04:19:53,279 - INFO - SSL context loaded successfully.
+2024-12-13 04:19:53,279 - INFO - Server started, waiting for connections...
+2024-12-13 04:23:23,691 - INFO - Users database loaded successfully.
+2024-12-13 04:23:23,695 - INFO - SSL context loaded successfully.
+2024-12-13 04:23:23,696 - INFO - Server started, waiting for connections...
+2024-12-13 04:23:34,264 - INFO - Users database loaded successfully.
+2024-12-13 04:23:34,267 - INFO - SSL context loaded successfully.
+2024-12-13 04:23:34,267 - INFO - Server started, waiting for connections...
+2024-12-13 04:23:37,784 - INFO - New connection from ('127.0.0.1', 59965)
+2024-12-13 04:23:37,784 - INFO - Active connections: 1
+2024-12-13 04:23:47,788 - INFO - LOL successfully logged in.
+2024-12-13 04:23:47,788 - INFO - LOL connected from ('127.0.0.1', 59965).
+2024-12-13 04:32:27,027 - INFO - Users database loaded successfully.
+2024-12-13 04:32:27,030 - INFO - SSL context loaded successfully.
+2024-12-13 04:32:27,031 - INFO - Server started, waiting for connections...
+2024-12-13 04:32:29,746 - INFO - New connection from ('127.0.0.1', 60066)
+2024-12-13 04:32:29,747 - INFO - Active connections: 1
+2024-12-13 04:32:39,299 - INFO - LOL successfully logged in.
+2024-12-13 04:33:09,636 - INFO - New connection from ('127.0.0.1', 60069)
+2024-12-13 04:33:09,636 - INFO - Active connections: 2
+2024-12-13 04:33:22,042 - WARNING - Registration failed: password too short for 'LOL2'.
+2024-12-13 04:37:46,652 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:42:08,566 - INFO - Users database loaded successfully.
+2024-12-13 04:42:08,569 - INFO - SSL context loaded successfully.
+2024-12-13 04:42:08,570 - INFO - Server started, waiting for connections...
+2024-12-13 04:43:40,259 - INFO - Users database loaded successfully.
+2024-12-13 04:43:40,261 - INFO - SSL context loaded successfully.
+2024-12-13 04:43:40,262 - INFO - Server started, waiting for connections...
+2024-12-13 04:44:26,043 - INFO - Users database loaded successfully.
+2024-12-13 04:44:26,046 - INFO - SSL context loaded successfully.
+2024-12-13 04:44:26,048 - INFO - Server started, waiting for connections...
+2024-12-13 04:44:28,463 - INFO - New connection from ('127.0.0.1', 60189)
+2024-12-13 04:44:28,463 - INFO - Active connections: 1
+2024-12-13 04:44:32,799 - WARNING - Invalid authentication option received.
+2024-12-13 04:46:25,224 - INFO - Users database loaded successfully.
+2024-12-13 04:46:25,227 - INFO - SSL context loaded successfully.
+2024-12-13 04:46:25,228 - INFO - Server started, waiting for connections...
+2024-12-13 04:46:26,920 - INFO - New connection from ('127.0.0.1', 60214)
+2024-12-13 04:46:26,920 - INFO - Active connections: 1
+2024-12-13 04:46:37,851 - WARNING - Failed login attempt for username: LOL2.
+2024-12-13 04:46:45,206 - INFO - New connection from ('127.0.0.1', 60215)
+2024-12-13 04:46:45,206 - INFO - Active connections: 1
+2024-12-13 04:46:55,207 - WARNING - Failed login attempt for username: 12345.
+2024-12-13 04:46:58,608 - INFO - New connection from ('127.0.0.1', 60217)
+2024-12-13 04:46:58,608 - INFO - Active connections: 1
+2024-12-13 04:47:05,679 - WARNING - Registration failed: password too short for '12345'.
+2024-12-13 04:47:09,589 - INFO - New connection from ('127.0.0.1', 60224)
+2024-12-13 04:47:09,589 - INFO - Active connections: 1
+2024-12-13 04:47:36,122 - INFO - Users database saved successfully.
+2024-12-13 04:47:36,123 - INFO - New user registered: 12345.
+2024-12-13 04:47:41,859 - ERROR - Error with client 12345: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:48:06,003 - INFO - New connection from ('127.0.0.1', 60236)
+2024-12-13 04:48:06,003 - INFO - Active connections: 1
+2024-12-13 04:48:21,587 - INFO - 12345 successfully logged in.
+2024-12-13 04:48:25,493 - ERROR - Error with client 12345: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:53:52,877 - INFO - Users database loaded successfully.
+2024-12-13 04:53:52,882 - INFO - SSL context loaded successfully.
+2024-12-13 04:53:52,883 - INFO - Server started, waiting for connections...
+2024-12-13 04:54:06,071 - INFO - New connection from ('127.0.0.1', 60266)
+2024-12-13 04:54:06,071 - INFO - Active connections: 1
+2024-12-13 04:54:16,276 - INFO - LOL successfully logged in.
+2024-12-13 04:54:17,962 - INFO - Message from LOL: ASKDDAK
+2024-12-13 04:54:20,883 - INFO - Message from LOL: AKDSJALDA
+2024-12-13 04:54:21,990 - INFO - Message from LOL: FKSAFLAS
+2024-12-13 04:54:27,475 - INFO - Message from LOL: ya W AHUI
+2024-12-13 04:54:29,550 - INFO - Message from LOL: ROBE
+2024-12-13 04:54:36,379 - INFO - Message from LOL: BLAT
+2024-12-13 04:54:49,030 - INFO - New connection from ('127.0.0.1', 60286)
+2024-12-13 04:54:49,030 - INFO - Active connections: 2
+2024-12-13 04:55:01,573 - INFO - 12345 successfully logged in.
+2024-12-13 04:55:06,139 - INFO - Message from 12345: DAROVA
+2024-12-13 04:55:08,541 - INFO - Message from 12345: HUI
+2024-12-13 04:55:46,983 - INFO - Message from LOL: EEE TY SHO
+2024-12-13 04:56:02,396 - INFO - Message from 12345: YA NI SHO A TY SHO, CHO PIZDISH?
+2024-12-13 04:56:07,413 - INFO - Message from LOL: AHUEL?
+2024-12-13 04:56:12,332 - INFO - Message from LOL: NE TY I TVAR
+2024-12-13 04:56:18,670 - INFO - Message from LOL: PIZDEC
+2024-12-13 04:56:26,163 - INFO - Message from 12345: TA PISHOV TY GANDON
+2024-12-13 04:58:04,895 - INFO - New connection from ('127.0.0.1', 60309)
+2024-12-13 04:58:04,895 - INFO - Active connections: 3
+2024-12-13 04:58:09,514 - WARNING - Invalid authentication option received.
+2024-12-13 04:58:12,971 - INFO - New connection from ('127.0.0.1', 60310)
+2024-12-13 04:58:12,971 - INFO - Active connections: 3
+2024-12-13 04:58:27,743 - INFO - Users database saved successfully.
+2024-12-13 04:58:27,743 - INFO - New user registered: ABOBA.
+2024-12-13 04:58:38,940 - INFO - Message from ABOBA: DAROV MUDILY
+2024-12-13 04:58:41,752 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:58:41,753 - INFO - Client removed from the list of active connections.
+2024-12-13 04:58:49,922 - INFO - New connection from ('127.0.0.1', 60311)
+2024-12-13 04:58:49,922 - INFO - Active connections: 3
+2024-12-13 04:58:57,499 - WARNING - Failed login attempt for username: ABOBUS.
+2024-12-13 04:59:05,781 - INFO - New connection from ('127.0.0.1', 60314)
+2024-12-13 04:59:05,781 - INFO - Active connections: 3
+2024-12-13 04:59:23,941 - INFO - ABOBA successfully logged in.
+2024-12-13 04:59:25,388 - INFO - Message from ABOBA: ASKDSLA
+2024-12-13 04:59:39,531 - INFO - Message from 12345: KAVO
+2024-12-13 04:59:56,329 - INFO - Message from 12345: YA VAHUI TY HTO
+2024-12-13 05:00:03,079 - INFO - Message from ABOBA: TVIY TATO
+2024-12-13 05:00:16,263 - INFO - Message from 12345: YA TOBI DAM SZHAS
+2024-12-13 05:00:38,767 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:00:38,767 - INFO - Client removed from the list of active connections.
+2024-12-13 05:00:42,805 - ERROR - Error with client 12345: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:00:42,805 - INFO - Client removed from the list of active connections.
+2024-12-13 05:00:47,805 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:00:47,805 - INFO - Client removed from the list of active connections.
+2024-12-13 05:08:49,099 - INFO - Users database loaded successfully.
+2024-12-13 05:08:49,102 - INFO - SSL context loaded successfully.
+2024-12-13 05:08:49,103 - INFO - Server started, waiting for connections...
+2024-12-13 05:10:58,166 - INFO - New connection from ('127.0.0.1', 60365)
+2024-12-13 05:10:58,166 - INFO - Active connections: 1
+2024-12-13 05:11:28,834 - INFO - LOL successfully logged in.
+2024-12-13 05:11:31,479 - INFO - Message from LOL: HELLO
+2024-12-13 05:11:34,710 - INFO - Message from LOL: SADAD
+2024-12-13 05:11:37,037 - INFO - Message from LOL: FJSAFA'
+2024-12-13 05:11:38,603 - INFO - Message from LOL: SDADSLS
+2024-12-13 05:11:46,498 - INFO - New connection from ('127.0.0.1', 60366)
+2024-12-13 05:11:46,498 - INFO - Active connections: 2
+2024-12-13 05:12:07,932 - INFO - ABOBA successfully logged in.
+2024-12-13 05:12:09,793 - INFO - Message from ABOBA: DASDA
+2024-12-13 05:12:10,922 - INFO - Message from ABOBA: DSAKD
+2024-12-13 05:12:12,810 - INFO - Message from ABOBA: DSLADA;
+2024-12-13 05:12:14,067 - INFO - Message from ABOBA: DKLAFLAJKFJAS;DF
+2024-12-13 05:12:15,230 - INFO - Message from ABOBA: FKJASKLDFASJL;FAS;F
+2024-12-13 05:12:36,273 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:12:36,274 - INFO - Client removed from the list of active connections.
+2024-12-13 05:12:39,813 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:12:39,813 - INFO - Client removed from the list of active connections.
+2024-12-13 05:15:31,691 - INFO - Users database loaded successfully.
+2024-12-13 05:15:31,694 - INFO - SSL context loaded successfully.
+2024-12-13 05:15:31,695 - INFO - Server started, waiting for connections...
+2024-12-13 05:15:34,237 - INFO - New connection from ('127.0.0.1', 60381)
+2024-12-13 05:15:34,237 - INFO - Active connections: 1
+2024-12-13 05:15:48,926 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:16:20,068 - INFO - Users database loaded successfully.
+2024-12-13 05:16:20,071 - INFO - SSL context loaded successfully.
+2024-12-13 05:16:20,072 - INFO - Server started, waiting for connections...
+2024-12-13 05:16:22,587 - INFO - New connection from ('127.0.0.1', 60382)
+2024-12-13 05:16:22,587 - INFO - Active connections: 1
+2024-12-13 05:16:35,678 - INFO - LOL successfully logged in.
+2024-12-13 05:16:40,969 - INFO - Message from LOL: KSDAK
+2024-12-13 05:16:42,548 - INFO - Message from LOL: FSLDFS
+2024-12-13 05:20:44,818 - INFO - Users database loaded successfully.
+2024-12-13 05:20:44,821 - INFO - SSL context loaded successfully.
+2024-12-13 05:20:44,822 - INFO - Server started, waiting for connections...
+2024-12-13 05:20:47,718 - INFO - New connection from ('127.0.0.1', 60391)
+2024-12-13 05:20:47,718 - INFO - Active connections: 1
+2024-12-13 05:20:50,988 - WARNING - Invalid authentication option received.
+2024-12-13 05:20:54,918 - WARNING - Invalid authentication option received.
+2024-12-13 05:21:02,903 - WARNING - Invalid authentication option received.
+2024-12-13 05:21:11,003 - INFO - LOL successfully logged in.
+2024-12-13 05:21:23,271 - INFO - New connection from ('127.0.0.1', 60392)
+2024-12-13 05:21:23,271 - INFO - Active connections: 2
+2024-12-13 05:21:39,726 - INFO - ABOBA successfully logged in.
+2024-12-13 05:21:42,850 - INFO - Message from ABOBA: DKSAD
+2024-12-13 05:21:47,716 - INFO - Message from LOL: À‘ÃŸ
+2024-12-13 05:21:51,653 - INFO - Message from LOL: KAVO
+2024-12-13 05:21:59,022 - INFO - Message from ABOBA: TA PISHOV TY
+2024-12-13 05:22:15,457 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:22:15,457 - INFO - Client removed from the list of active connections.
+2024-12-13 05:22:19,936 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:22:19,937 - INFO - Client removed from the list of active connections.
+2024-12-13 05:23:05,731 - INFO - Users database loaded successfully.
+2024-12-13 05:23:05,734 - INFO - SSL context loaded successfully.
+2024-12-13 05:23:05,735 - INFO - Server started, waiting for connections...
+2024-12-13 05:23:08,022 - INFO - New connection from ('127.0.0.1', 60397)
+2024-12-13 05:23:08,022 - INFO - Active connections: 1
+2024-12-13 05:23:30,453 - INFO - Users database saved successfully.
+2024-12-13 05:23:30,454 - INFO - New user registered: LOL3.
+2024-12-13 05:23:32,492 - INFO - Message from LOL3: KSAD
+2024-12-13 05:23:36,226 - INFO - Message from LOL3: KDALSJ
+2024-12-13 05:24:50,799 - INFO - New connection from ('127.0.0.1', 60419)
+2024-12-13 05:24:50,800 - INFO - Active connections: 2
+2024-12-13 05:24:58,099 - WARNING - Invalid authentication option received.
+2024-12-13 05:25:09,137 - WARNING - Registration failed: password too short for 'OKI'.
+2024-12-13 05:25:17,608 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:25:44,273 - ERROR - Error with client LOL3: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:25:44,273 - INFO - Client removed from the list of active connections.
+2024-12-13 05:27:39,335 - INFO - Users database loaded successfully.
+2024-12-13 05:27:39,339 - INFO - SSL context loaded successfully.
+2024-12-13 05:27:39,341 - INFO - Server started, waiting for connections...
+2024-12-13 05:27:41,328 - INFO - New connection from ('127.0.0.1', 60433)
+2024-12-13 05:27:41,328 - INFO - Active connections: 1
+2024-12-13 05:27:44,617 - WARNING - Invalid authentication option received.
+2024-12-13 05:27:55,768 - INFO - LOL successfully logged in.
+2024-12-13 05:27:58,946 - INFO - Message from LOL: AS
+2024-12-13 05:28:00,672 - INFO - Message from LOL: IF
+2024-12-13 05:28:02,888 - INFO - Message from LOL: I AM
+2024-12-13 05:30:15,303 - INFO - Users database loaded successfully.
+2024-12-13 05:30:15,306 - INFO - SSL context loaded successfully.
+2024-12-13 05:30:15,307 - INFO - Server started, waiting for connections...
+2024-12-13 05:30:17,526 - INFO - New connection from ('127.0.0.1', 60438)
+2024-12-13 05:30:17,526 - INFO - Active connections: 1
+2024-12-13 05:30:28,000 - INFO - LOL successfully logged in.
+2024-12-13 05:30:36,972 - INFO - Message from LOL: WHY
+2024-12-13 05:30:55,996 - INFO - Message from LOL: LOL
+2024-12-13 05:30:58,333 - INFO - Message from LOL: LOGIN
+2024-12-13 05:31:00,973 - INFO - Message from LOL: LOL
+2024-12-13 05:31:00,973 - INFO - Message from LOL: 123
+2024-12-13 05:32:50,699 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:32:50,700 - INFO - Client removed from the list of active connections.
+2024-12-13 05:33:15,193 - INFO - Users database loaded successfully.
+2024-12-13 05:33:15,197 - INFO - SSL context loaded successfully.
+2024-12-13 05:33:15,198 - INFO - Server started, waiting for connections...
+2024-12-13 05:33:17,013 - INFO - New connection from ('127.0.0.1', 60443)
+2024-12-13 05:33:17,013 - INFO - Active connections: 1
+2024-12-13 05:33:28,349 - INFO - LOL successfully logged in.
+2024-12-13 05:33:36,233 - INFO - Message from LOL: REGISTER
+2024-12-13 05:33:46,358 - INFO - Message from LOL: ABOBA
+2024-12-13 05:33:50,780 - INFO - Message from LOL: ABOBUSSUS
+2024-12-13 05:34:09,462 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:34:09,462 - INFO - Client removed from the list of active connections.
+2024-12-13 05:34:11,135 - INFO - New connection from ('127.0.0.1', 60444)
+2024-12-13 05:34:11,135 - INFO - Active connections: 1
+2024-12-13 05:34:16,020 - WARNING - Registration failed: username 'LOL' already exists.
+2024-12-13 05:34:18,288 - WARNING - Invalid authentication option received.
+2024-12-13 05:34:26,982 - WARNING - Registration failed: username 'LOL' already exists.
+2024-12-13 05:34:35,551 - WARNING - Invalid authentication option received.
+2024-12-13 05:34:44,018 - ERROR - Authentication error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:36:55,099 - INFO - Users database loaded successfully.
+2024-12-13 05:36:55,102 - INFO - SSL context loaded successfully.
+2024-12-13 05:36:55,103 - INFO - Server started, waiting for connections...
+2024-12-13 05:36:57,670 - INFO - New connection from ('127.0.0.1', 60457)
+2024-12-13 05:36:57,670 - INFO - Active connections: 1
+2024-12-13 05:37:03,363 - INFO - LOL successfully logged in.
+2024-12-13 05:38:41,421 - INFO - Users database loaded successfully.
+2024-12-13 05:38:41,424 - INFO - SSL context loaded successfully.
+2024-12-13 05:38:41,425 - INFO - Server started, waiting for connections...
+2024-12-13 05:38:44,719 - INFO - New connection from ('127.0.0.1', 60467)
+2024-12-13 05:38:44,719 - INFO - Active connections: 1
+2024-12-13 05:38:53,810 - INFO - LOL successfully logged in.
+2024-12-13 05:38:57,737 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:38:57,737 - INFO - Client removed from the list of active connections.
+2024-12-13 05:42:35,692 - INFO - Users database loaded successfully.
+2024-12-13 05:42:35,696 - INFO - SSL context loaded successfully.
+2024-12-13 05:42:35,697 - INFO - Server started, waiting for connections...
+2024-12-13 05:42:38,360 - INFO - New connection from ('127.0.0.1', 60487)
+2024-12-13 05:42:38,360 - INFO - Active connections: 1
+2024-12-13 05:42:54,955 - INFO - LOL successfully logged in.
+2024-12-13 05:42:58,983 - INFO - Message from LOL: AHAHAHA
+2024-12-13 05:43:00,911 - INFO - Message from LOL: KSDAKD
+2024-12-13 05:43:15,204 - INFO - New connection from ('127.0.0.1', 60490)
+2024-12-13 05:43:15,205 - INFO - Active connections: 2
+2024-12-13 05:43:27,080 - INFO - ABOBA successfully logged in.
+2024-12-13 05:43:32,928 - INFO - Message from ABOBA: AYYO
+2024-12-13 05:43:41,707 - INFO - Message from LOL: WHATSGOOD
+2024-12-13 05:43:50,196 - INFO - Message from ABOBA: NOTHING MUCH MY NIGGA
+2024-12-13 05:43:58,333 - INFO - Message from ABOBA: JUST CAME BACK FROM THE DIDDY PARTY
+2024-12-13 05:44:03,695 - INFO - Message from LOL: NO WAY
+2024-12-13 05:44:11,041 - INFO - Message from LOL: YIOU A DIDDLER
+2024-12-13 05:44:14,509 - INFO - Message from LOL: HE-HE-HELLNAH
+2024-12-13 05:44:29,707 - INFO - Message from LOL: SKULL EMOJIE
+2024-12-13 05:45:05,535 - INFO - Message from LOL: hahahaha
+2024-12-13 05:45:08,070 - INFO - Message from LOL: lol
+2024-12-13 05:45:12,493 - INFO - Message from LOL: nice one
+2024-12-13 05:45:50,840 - INFO - Message from LOL: lol
+2024-12-13 05:46:00,521 - INFO - Message from ABOBA: didler ahh
+2024-12-13 05:46:14,363 - INFO - Message from LOL: Lexit
+2024-12-13 05:46:16,710 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:46:16,711 - INFO - Client removed from the list of active connections.
+2024-12-13 05:46:21,249 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:46:21,249 - INFO - Client removed from the list of active connections.
+2024-12-13 22:35:35,282 - INFO - Users database loaded successfully.
+2024-12-13 22:35:35,301 - INFO - SSL context loaded successfully.
+2024-12-13 22:35:35,303 - INFO - Server started, waiting for connections...
+2024-12-15 02:37:11,314 - INFO - Users database loaded successfully.
+2024-12-15 02:37:11,341 - INFO - SSL context loaded successfully.
+2024-12-15 02:37:11,342 - CRITICAL - Server failed to start: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-15 02:37:15,621 - INFO - Users database loaded successfully.
+2024-12-15 02:37:15,624 - INFO - SSL context loaded successfully.
+2024-12-15 02:37:15,625 - INFO - Server started, waiting for connections...
+2024-12-15 02:37:24,806 - INFO - New connection from ('127.0.0.1', 55361)
+2024-12-15 02:37:24,806 - INFO - Active connections: 1
+2024-12-15 02:37:38,122 - INFO - LOL successfully logged in.
+2024-12-15 02:37:41,691 - INFO - Message from LOL: ASSF;AL;DS
+2024-12-15 02:37:45,559 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-15 02:37:45,560 - INFO - Client removed from the list of active connections.
+2024-12-15 17:35:25,152 - INFO - Users database loaded successfully.
+2024-12-15 17:35:25,196 - INFO - SSL context loaded successfully.
+2024-12-15 17:35:25,198 - INFO - Server started, waiting for connections...
+2024-12-15 17:35:31,871 - INFO - New connection from ('127.0.0.1', 51138)
+2024-12-15 17:35:31,871 - INFO - Active connections: 1
+2024-12-15 17:35:43,946 - INFO - LOL successfully logged in.
+2024-12-15 17:35:47,757 - INFO - Message from LOL: SADADDSA
+2024-12-15 17:35:49,509 - INFO - Message from LOL: FASDF'
+2024-12-15 17:35:53,578 - INFO - New connection from ('127.0.0.1', 51141)
+2024-12-15 17:35:53,578 - INFO - Active connections: 2
+2024-12-15 17:36:15,731 - INFO - Users database saved successfully.
+2024-12-15 17:36:15,731 - INFO - New user registered: BOHDAN.
+2024-12-15 17:36:17,791 - INFO - Message from BOHDAN: SDKAALSK
+2024-12-15 17:36:19,371 - INFO - Message from BOHDAN: DKLJASDLKA
+2024-12-15 17:36:21,481 - INFO - Message from LOL: ¿‘≤Àƒ¬Œ¿À≤‘¿
+2024-12-15 17:37:36,620 - INFO - New connection from ('127.0.0.1', 51146)
+2024-12-15 17:37:36,620 - INFO - Active connections: 3
+2024-12-15 17:38:10,772 - INFO - ABOBA successfully logged in.
+2024-12-15 17:38:20,283 - INFO - Message from ABOBA: DKLKAJDFLAS
+2024-12-15 17:38:21,354 - INFO - Message from ABOBA: FJKLSAFLD
+2024-12-15 17:38:33,512 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-15 17:38:33,513 - INFO - Client removed from the list of active connections.
+2024-12-15 17:38:50,304 - INFO - Message from LOL: dkasjdla
+2024-12-15 17:38:54,131 - INFO - Message from BOHDAN: fjdshflsa
+2024-12-15 17:39:38,163 - ERROR - Error with client LOL: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-15 17:39:38,164 - INFO - Client removed from the list of active connections.
+2024-12-17 03:53:00,451 - INFO - Users database loaded successfully.
+2024-12-17 03:53:00,481 - INFO - SSL context loaded successfully.
+2024-12-17 03:53:00,482 - INFO - Server started, waiting for connections...
+2024-12-17 03:53:04,363 - INFO - New connection from ('127.0.0.1', 9500)
+2024-12-17 03:53:04,363 - INFO - Active connections: 1
+2024-12-17 03:57:18,342 - INFO - LOL successfully logged in.
+2024-12-17 03:58:02,099 - INFO - Message from LOL: HELLO WORLD
+2024-12-17 03:58:27,134 - INFO - New connection from ('127.0.0.1', 9528)
+2024-12-17 03:58:27,134 - INFO - Active connections: 2
+2024-12-17 03:58:40,204 - INFO - ABOBA successfully logged in.
+2024-12-17 03:58:52,003 - INFO - Message from ABOBA: HELLO who is here?
+2024-12-17 03:58:54,522 - INFO - Message from LOL: me
+2024-12-17 03:58:59,506 - INFO - Message from ABOBA: hi lol
+2024-12-17 03:59:03,687 - INFO - Message from LOL: sup aboba
+2024-12-17 04:10:11,539 - INFO - New connection from ('127.0.0.1', 9569)
+2024-12-17 04:10:11,539 - INFO - Active connections: 3
+2024-12-17 04:10:26,980 - WARNING - Invalid authentication option received.
+2024-12-17 04:10:50,783 - INFO - Users database saved successfully.
+2024-12-17 04:10:50,783 - INFO - New user registered: NewGuy.
+2024-12-17 04:10:59,346 - INFO - Message from NewGuy: hello
+2024-12-17 04:11:05,409 - INFO - Message from LOL: whatsgood
+2024-12-17 04:11:12,897 - INFO - Message from ABOBA: HEYa homie
+2024-12-17 04:12:51,341 - INFO - Message from ABOBA: i gotta go
+2024-12-17 04:12:54,433 - INFO - Message from LOL: bye
+2024-12-17 04:12:57,967 - INFO - Message from NewGuy: bye
+2024-12-17 04:13:01,069 - ERROR - Error with client ABOBA: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-17 04:13:01,070 - INFO - Client removed from the list of active connections.

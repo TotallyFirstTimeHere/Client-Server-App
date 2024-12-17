@@ -18,3 +18,101 @@
 2024-12-11 19:12:26,638 - ERROR - Connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '127.0.0.1'. (_ssl.c:1020)
 2024-12-11 19:12:27,811 - ERROR - Connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '127.0.0.1'. (_ssl.c:1020)
 2024-12-11 19:15:11,582 - INFO - Connected to server with SSL.
+2024-12-11 19:31:18,310 - INFO - Connected to server with SSL.
+2024-12-11 19:37:10,399 - INFO - Connected to server with SSL.
+2024-12-11 19:38:27,471 - INFO - Connected to server with SSL.
+2024-12-11 19:45:15,552 - ERROR - Error during communication: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-11 19:45:15,553 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 03:58:54,243 - INFO - Connected to server with SSL.
+2024-12-13 03:59:41,492 - ERROR - Error during communication: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 03:59:41,493 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:01:28,820 - INFO - Connected to server with SSL.
+2024-12-13 04:02:15,466 - INFO - Connected to server with SSL.
+2024-12-13 04:02:39,181 - INFO - Connected to server with SSL.
+2024-12-13 04:02:50,950 - INFO - Server closed the connection.
+2024-12-13 04:04:24,803 - INFO - Connected to server with SSL.
+2024-12-13 04:07:04,943 - INFO - Connected to server with SSL.
+2024-12-13 04:08:22,993 - INFO - Connected to server with SSL.
+2024-12-13 04:09:09,583 - INFO - Server closed the connection.
+2024-12-13 04:09:12,958 - ERROR - Error sending message: EOF occurred in violation of protocol (_ssl.c:2427)
+2024-12-13 04:09:26,325 - INFO - Connected to server with SSL.
+2024-12-13 04:09:54,989 - INFO - Connected to server with SSL.
+2024-12-13 04:17:07,363 - ERROR - Error during communication: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:17:07,364 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:23:37,783 - INFO - Connected to server with SSL.
+2024-12-13 04:25:47,245 - ERROR - Error during communication: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:25:47,246 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 04:25:47,247 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:32:29,746 - INFO - Connected to server with SSL.
+2024-12-13 04:33:09,636 - INFO - Connected to server with SSL.
+2024-12-13 04:33:29,960 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:37:46,652 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-13 04:44:28,463 - INFO - Connected to server with SSL.
+2024-12-13 04:44:33,827 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:46:26,919 - INFO - Connected to server with SSL.
+2024-12-13 04:46:40,569 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:46:45,205 - INFO - Connected to server with SSL.
+2024-12-13 04:46:57,034 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:46:58,608 - INFO - Connected to server with SSL.
+2024-12-13 04:47:06,829 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:47:09,589 - INFO - Connected to server with SSL.
+2024-12-13 04:48:06,003 - INFO - Connected to server with SSL.
+2024-12-13 04:54:06,070 - INFO - Connected to server with SSL.
+2024-12-13 04:54:49,030 - INFO - Connected to server with SSL.
+2024-12-13 04:58:04,895 - INFO - Connected to server with SSL.
+2024-12-13 04:58:10,978 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:58:12,970 - INFO - Connected to server with SSL.
+2024-12-13 04:58:49,921 - INFO - Connected to server with SSL.
+2024-12-13 04:59:04,147 - ERROR - Error sending message: [WinError 10038] An operation was attempted on something that is not a socket
+2024-12-13 04:59:05,780 - INFO - Connected to server with SSL.
+2024-12-13 05:10:58,165 - INFO - Connected to server with SSL.
+2024-12-13 05:10:58,166 - INFO - Message from server: LOGIN_OR_REGISTER:
+2024-12-13 05:11:16,730 - INFO - Message from server: USERNAME:
+2024-12-13 05:11:27,081 - INFO - Message from server: PASSWORD:
+2024-12-13 05:11:28,834 - INFO - Message from server: LOGIN_SUCCESS
+2024-12-13 05:11:46,497 - INFO - Connected to server with SSL.
+2024-12-13 05:11:46,498 - INFO - Message from server: LOGIN_OR_REGISTER:
+2024-12-13 05:11:55,241 - INFO - Message from server: USERNAME:
+2024-12-13 05:11:56,947 - INFO - Message from server: PASSWORD:
+2024-12-13 05:12:07,932 - INFO - Message from server: LOGIN_SUCCESS
+2024-12-13 05:12:07,933 - INFO - Message from server: ABOBA has joined the chat!
+2024-12-13 05:12:09,794 - INFO - Message from server: ABOBA: DASDA
+2024-12-13 05:12:10,922 - INFO - Message from server: ABOBA: DSAKD
+2024-12-13 05:12:12,810 - INFO - Message from server: ABOBA: DSLADA;
+2024-12-13 05:12:14,068 - INFO - Message from server: ABOBA: DKLAFLAJKFJAS;DF
+2024-12-13 05:12:15,231 - INFO - Message from server: ABOBA: FKJASKLDFASJL;FAS;F
+2024-12-13 05:12:36,274 - INFO - Message from server: LOL has left the chat.
+2024-12-13 05:15:34,236 - INFO - Connected to server with SSL.
+2024-12-13 05:15:34,238 - INFO - Message from server: LOGIN_OR_REGISTER:
+2024-12-13 05:15:43,154 - INFO - Message from server: USERNAME:
+2024-12-13 05:16:22,586 - INFO - Connected to server with SSL.
+2024-12-13 05:19:54,970 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:20:47,717 - INFO - Connected to server with SSL.
+2024-12-13 05:21:23,270 - INFO - Connected to server with SSL.
+2024-12-13 05:22:15,457 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-13 05:22:19,936 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-13 05:23:08,021 - INFO - Connected to server with SSL.
+2024-12-13 05:24:50,799 - INFO - Connected to server with SSL.
+2024-12-13 05:27:41,328 - INFO - Connected to server with SSL.
+2024-12-13 05:30:08,333 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-13 05:30:17,525 - INFO - Connected to server with SSL.
+2024-12-13 05:33:17,012 - INFO - Connected to server with SSL.
+2024-12-13 05:34:11,134 - INFO - Connected to server with SSL.
+2024-12-13 05:36:57,669 - INFO - Connected to server with SSL.
+2024-12-13 05:38:38,232 - ERROR - Connection error: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-12-13 05:38:44,718 - INFO - Connected to server with SSL.
+2024-12-13 05:42:38,359 - INFO - Connected to server with SSL.
+2024-12-13 05:43:15,204 - INFO - Connected to server with SSL.
+2024-12-13 05:46:16,710 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-13 05:46:21,249 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-15 02:37:24,805 - INFO - Connected to server with SSL.
+2024-12-15 17:35:31,869 - INFO - Connected to server with SSL.
+2024-12-15 17:35:53,576 - INFO - Connected to server with SSL.
+2024-12-15 17:37:36,619 - INFO - Connected to server with SSL.
+2024-12-15 17:38:33,512 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-15 17:40:30,705 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-12-17 03:53:04,363 - INFO - Connected to server with SSL.
+2024-12-17 03:58:27,133 - INFO - Connected to server with SSL.
+2024-12-17 04:10:11,539 - INFO - Connected to server with SSL.
+2024-12-17 04:13:01,069 - ERROR - Error receiving message: [WinError 10053] An established connection was aborted by the software in your host machine
+2024-12-17 04:14:04,890 - ERROR - Error receiving message: [WinError 10054] An existing connection was forcibly closed by the remote host

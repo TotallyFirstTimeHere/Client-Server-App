@@ -18,16 +18,14 @@ HOST = '127.0.0.1'  # Адреса сервера
 PORT = 65432  # Порт сервера
 
 # Налаштування SSL-контексту
-
 context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH, cafile="server.crt")
 context.check_hostname = True
-context.check_hostname = False  # Якщо ви використовуєте самопідписаний сертифікат
+context.check_hostname = False  # Для самопідписаних сертифікатів
 context.verify_mode = ssl.CERT_REQUIRED
 
 # Створення TCP-з'єднання з сервером через SSL
 def create_connection():
     try:
-        # Створення TCP-з'єднання
         sock = socket.create_connection((HOST, PORT))
         secure_sock = context.wrap_socket(sock, server_hostname=HOST)
         logging.info("Connected to server with SSL.")
@@ -38,75 +36,87 @@ def create_connection():
         print(f"Помилка підключення: {e}")
         return None
 
-# Функція для коректного завершення програми
-def exit_gracefully(secure_sock):
-    print("\nВихід з програми...")
-    secure_sock.close()
-
-# Взаємодія з сервером (автентифікація, надсилання/отримання повідомлень)
-def authenticate_and_communicate(secure_sock):
-    try:
-        while True:
-            server_message = secure_sock.recv(1024).decode()
-            if not server_message:
-                logging.info("Server closed the connection.")
-                break
-            print(f"Сервер: {server_message}")
-
-            if server_message.endswith(":"):  # Запит на введення користувача
-                user_input = input()
-                secure_sock.sendall(user_input.encode())
-
-            elif server_message == "LOGIN_SUCCESS" or server_message == "REGISTER_SUCCESS":
-                print("Успішно!")
-            elif server_message == "LOGIN_FAILED":
-                print("Невдалий вхід. Спробуйте ще раз.")
-            elif server_message == "USERNAME_TAKEN":
-                print("Ім'я користувача вже зайняте.")
-            elif server_message == "AUTH_ERROR":
-                print("Помилка автентифікації.")
-            elif server_message.startswith("ERROR:"):
-                print(server_message)
-            else:
-                # Можливо, це повідомлення від інших користувачів
-                print(server_message)
-    except Exception as e:
-        logging.error(f"Error during communication: {e}")
-        print(f"Помилка під час взаємодії з сервером: {e}")
-
-# Функція для отримання повідомлень від сервера в окремому потоці
+# Функція для отримання повідомлень від сервера
 def receive_messages(secure_sock):
     try:
         while True:
             message = secure_sock.recv(1024).decode("utf-8")
             if message:
-                print(message)
+                print(message)  # Виведення отриманого повідомлення
             else:
                 break
     except Exception as e:
         logging.error(f"Error receiving message: {e}")
         print("Помилка отримання повідомлення.")
+    finally:
         secure_sock.close()
 
 # Функція для надсилання повідомлень серверу
 def send_messages(secure_sock):
     try:
         while True:
-            message = input("")
-            secure_sock.send(message.encode("utf-8"))
+            message = input()
+            if message.lower() == "exit":
+                print("Вихід із чату...")
+                break
+            secure_sock.sendall(message.encode("utf-8"))
     except Exception as e:
         logging.error(f"Error sending message: {e}")
         print("Помилка при надсиланні повідомлення.")
+    finally:
         secure_sock.close()
+
+def authenticate(secure_sock):
+    try:
+        while True:
+            option = input("LOGIN_OR_REGISTER: ").strip()
+            secure_sock.sendall(option.encode())
+
+            if option.upper() == "LOGIN":
+                username = input("USERNAME: ").strip()
+                password = input("PASSWORD: ").strip()
+                secure_sock.sendall(username.encode())
+                secure_sock.sendall(password.encode())
+
+                response = secure_sock.recv(1024).decode()
+                if response == "LOGIN_SUCCESS":
+                    print(f"You are logged in as {username}.")
+                    logging.info(f"User {username} logged in successfully.")
+                    return username
+                else:
+                    print("Login failed. Try again.")
+
+            elif option.upper() == "REGISTER":
+                username = input("USERNAME: ").strip()
+                secure_sock.sendall(username.encode())
+
+                response = secure_sock.recv(1024).decode()
+                if response == "USERNAME_TAKEN":
+                    print("This username is already taken. Try again.")
+                    continue
+
+                password = input("PASSWORD: ").strip()
+                secure_sock.sendall(password.encode())
+
+                response = secure_sock.recv(1024).decode()
+                if response == "REGISTER_SUCCESS":
+                    print(f"You are registered and logged in as {username}.")
+                    logging.info(f"User {username} registered successfully.")
+                    return username
+                else:
+                    print("Registration failed. Try again.")
+            else:
+                print("Invalid option. Please enter LOGIN or REGISTER.")
+    except Exception as e:
+        logging.error(f"Authentication error: {e}")
+        print("Помилка автентифікації.")
+        return None
 
 # Основна функція для запуску клієнта
 def main():
     secure_sock = create_connection()
     if secure_sock is None:
         return
-
-    # Запуск автентифікації та взаємодії з сервером
-    authenticate_and_communicate(secure_sock)
 
     # Запуск потоків для отримання та надсилання повідомлень
     receive_thread = threading.Thread(target=receive_messages, args=(secure_sock,), daemon=True)
@@ -118,9 +128,6 @@ def main():
     # Очікування завершення потоків
     receive_thread.join()
     send_thread.join()
-
-
-
 
 if __name__ == "__main__":
     main()

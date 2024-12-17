@@ -1,35 +1,32 @@
-import socket        # Для створення мережевих сокетів
-import ssl           # Для забезпечення SSL/TLS шифрування
-import threading     # Для роботи з багатопотоковістю
-import json          # Для зберігання облікових даних у JSON-файлі
-import hashlib       # Для хешування паролів
-import logging       # Для логування
+import socket
+import ssl
+import logging
+import threading
+import json
+import hashlib
 import os
-
-# Перевірка чи існують сертифікати. Якщо їх немає, вони будуть автоматично згенеровані.
-if not os.path.exists('server.crt') or not os.path.exists('server.key'):
-    print("SSL certificates not found, generating new ones...")
-    os.system("openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365")
 
 # Налаштування журналювання
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("server.log"),  # Запис у файл
-        logging.StreamHandler()            # Виведення у консоль
+        logging.FileHandler("server.log"),
+        logging.StreamHandler()
     ]
 )
 
-# Конфігурація сервера
-HOST = '127.0.0.1'  # Локальний хост (сервер працює лише на моєму комп'ютері)
-PORT = 65432         # Порт для підключення клієнтів
+# Перевірка сертифікатів SSL
+if not os.path.exists('server.crt') or not os.path.exists('server.key'):
+    print("SSL certificates not found, generating...")
+    os.system("openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365")
 
-# Завантаження облікових даних
+HOST = '127.0.0.1'
+PORT = 65432
+
 USER_DB = "users.json"
 clients = []
 nicknames = []
-lock = threading.Lock()  # Блокування для доступу до списку клієнтів
 
 # Завантаження користувачів з файлу
 def load_users():
@@ -39,19 +36,19 @@ def load_users():
             logging.info("Users database loaded successfully.")
             return users
     except FileNotFoundError:
-        logging.warning("Users database not found, creating a new one.")  # Додано логування
+        logging.warning("Users database not found, creating a new one.")
         return {}
     except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON: {e}")  # Додано логування помилок
+        logging.error(f"Error decoding JSON: {e}")
         return {}
 
-# Збереження користувачів у файл
 def save_users(users):
     try:
         with open(USER_DB, 'w') as file:
-            json.dump(users, file)  # Зберігає облікові записи у файл
+            json.dump(users, file)
+            logging.info("Users database saved successfully.")
     except Exception as e:
-        logging.error(f"Error saving users: {e}")  # Додано логування помилок
+        logging.error(f"Error saving users: {e}")
 
 users = load_users()
 
@@ -59,138 +56,108 @@ users = load_users()
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
-# Функція аутентифікації
+# Автентифікація клієнта
 def authenticate(conn):
-    try:
-        option = conn.recv(1024).decode().strip()
+    while True:
+        try:
+            conn.sendall(b"LOGIN_OR_REGISTER:")
+            option = conn.recv(1024).decode().strip()
 
-        if option == "LOGIN":
-            conn.sendall(b"USERNAME:")
-            username = conn.recv(1024).decode().strip()
-            conn.sendall(b"PASSWORD:")
-            password = conn.recv(1024).decode().strip()
+            if option == "LOGIN":
+                conn.sendall(b"USERNAME:")
+                username = conn.recv(1024).decode().strip()
+                conn.sendall(b"PASSWORD:")
+                password = conn.recv(1024).decode().strip()
 
-            if username in users and users[username] == hash_password(password):
-                conn.sendall(b"LOGIN_SUCCESS")
-                logging.info(f"{username} successfully logged in.")
-                return username
+                if username in users and users[username] == hash_password(password):
+                    conn.sendall(b"LOGIN_SUCCESS")
+                    logging.info(f"{username} successfully logged in.")
+                    conn.sendall(f"You are logged in as {username}.".encode())
+                    return username
+                else:
+                    conn.sendall(b"LOGIN_FAILED")
+                    logging.warning(f"Failed login attempt for username: {username}.")
+
+            elif option == "REGISTER":
+                conn.sendall(b"USERNAME:")
+                username = conn.recv(1024).decode().strip()
+                if username in users:
+                    conn.sendall(b"USERNAME_TAKEN")
+                    logging.warning(f"Registration failed: username '{username}' already exists.")
+                else:
+                    conn.sendall(b"PASSWORD:")
+                    password = conn.recv(1024).decode().strip()
+
+                    if len(password) < 6:
+                        conn.sendall(b"PASSWORD_TOO_SHORT")
+                        logging.warning(f"Registration failed: password too short for '{username}'.")
+                    else:
+                        users[username] = hash_password(password)
+                        save_users(users)
+                        conn.sendall(b"REGISTER_SUCCESS")
+                        logging.info(f"New user registered: {username}.")
+                        conn.sendall(f"You are registered and logged in as {username}.".encode())
+                        return username
+
             else:
-                conn.sendall(b"LOGIN_FAILED")
-                logging.warning(f"Failed login attempt for username: {username}.")
-                return None
+                conn.sendall(b"INVALID_OPTION")
+                logging.warning("Invalid authentication option received.")
+        except Exception as e:
+            logging.error(f"Authentication error: {e}")
+            conn.sendall(b"AUTH_ERROR")
 
-        elif option == "REGISTER":
-            conn.sendall(b"USERNAME:")
-            username = conn.recv(1024).decode().strip()
-            if username in users:
-                conn.sendall(b"USERNAME_TAKEN")
-                logging.warning(f"Registration failed: username '{username}' already exists.")
-                return None
-            conn.sendall(b"PASSWORD:")
-            password = conn.recv(1024).decode().strip()
-
-            if len(password) < 6:  # Перевірка на мінімальну довжину пароля
-                conn.sendall(b"PASSWORD_TOO_SHORT")
-                logging.warning(f"Registration failed: password for username '{username}' too short.")
-                return None
-
-            users[username] = hash_password(password)
-            save_users(users)
-            conn.sendall(b"REGISTER_SUCCESS")
-            logging.info(f"New user registered: {username}.")
-            return username
-        else:
-            conn.sendall(b"INVALID_OPTION")
-            logging.warning(f"Invalid option received: {option}")
-            return None
-    except Exception as e:
-        logging.error(f"Authentication error: {e}")
-        conn.sendall(b"AUTH_ERROR")
-        return None
-
-# Функція для трансляції повідомлень всім підключеним клієнтам, крім відправника
-def broadcast(message, sender=None):
-    """Надсилання повідомлення всім клієнтам, крім відправника."""
-    with lock:  # Блокування доступу до списку клієнтів
-        for client in clients:
+# Передача повідомлень усім клієнтам
+def broadcast(message, sender_conn=None):
+    for client in clients:
+        if client != sender_conn:
             try:
-                if sender:
-                    index = clients.index(sender)
-                    sender_nickname = nicknames[index]
-                    # Перевіряємо, чи повідомлення ще не містить ніка
-                    if not message.decode('utf-8').startswith(f"{sender_nickname}: "):
-                        message = f"{sender_nickname}: {message.decode('utf-8')}".encode('utf-8')
-
-                client.send(message)
+                client.sendall(message.encode())
             except Exception as e:
-                logging.error(f"Error sending message to client: {e}")
+                logging.error(f"Broadcast error: {e}")
                 remove_client(client)
 
-# Обробка зв'язку з конкретним клієнтом
-def handle(client):
-    """Обробка зв'язку з конкретним клієнтом."""
-    while True:
-        try:
-            message = client.recv(1024)
-            if not message:
-                raise ConnectionResetError("Client closed the connection")
-            broadcast(message, sender=client)
-        except (ConnectionResetError, ConnectionAbortedError):
-            print("Client disconnected.")
-            remove_client(client)
-            break
-        except Exception as e:
-            print(f"Error with client: {e}")
-            remove_client(client)
-            break
+# Видалення клієнта з чату
+def remove_client(conn):
+    if conn in clients:
+        clients.remove(conn)
+        logging.info("Client removed from the list of active connections.")
 
-# Видалення клієнта зі списку та закриття з'єднання
-def remove_client(client):
-    """Видалення клієнта із сервера."""
-    with lock:  # Блокування доступу до списків клієнтів
-        if client in clients:
-            index = clients.index(client)
-            nickname = nicknames[index]
-            clients.remove(client)
-            client.close()
-            nicknames.remove(nickname)
-            broadcast(f"{nickname} left the chat".encode('utf-8'))
-            logging.info(f"{nickname} disconnected.")
+# Обробка клієнта
+def handle_client(conn, addr):
+    logging.info(f"New connection from {addr}")
+    username = authenticate(conn)
+    if not username:
+        conn.close()
+        return
 
-# Прийом та обробка нових з'єднань клієнтів
-def receive():
-    """Прийом та обробка нових з'єднань клієнтів."""
-    while True:
-        try:
-            client, address = secure_server.accept()
-            print(f"Connected from {str(address)}")
+    nicknames.append(username)
+    clients.append(conn)
+    broadcast(f"{username} has joined the chat!", conn)
 
-            # Автентифікація користувача
-            nickname = authenticate(client)
-            if nickname:
-                nicknames.append(nickname)
-                clients.append(client)
+    try:
+        while True:
+            message = conn.recv(2048).decode().strip()
+            if message:
+                logging.info(f"Message from {username}: {message}")
+                broadcast(f"{username}: {message}", conn)
+    except Exception as e:
+        logging.error(f"Error with client {username}: {e}")
+    finally:
+        remove_client(conn)
+        nicknames.remove(username)
+        broadcast(f"{username} has left the chat.")
+        conn.close()
 
-                print(f"Client nickname: {nickname}")
-                broadcast(f"{nickname} joined the chat".encode("utf-8"))
-                client.send("You have connected to the server".encode("utf-8"))
-
-                # Запуск обробки клієнта в новому потоці
-                thread = threading.Thread(target=handle, args=(client,), daemon=True)
-                thread.start()
-        except Exception as e:
-            logging.error(f"Error accepting connection: {e}")
-
-# Налаштовання SSL/TLS з використанням сертифіката та приватного ключа.
+# Налаштування SSL/TLS
 try:
     context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
     context.load_cert_chain(certfile="server.crt", keyfile="server.key")
     logging.info("SSL context loaded successfully.")
 except Exception as e:
-    logging.error(f"Failed to load SSL context: {e}")
+    logging.critical(f"Failed to load SSL context: {e}")
     exit(1)
 
-# Запуск сервера (основний цикл сервера)
+# Запуск сервера
 try:
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((HOST, PORT))
@@ -198,14 +165,12 @@ try:
     logging.info("Server started, waiting for connections...")
     print("[SERVER STARTED] Waiting for connections...")
 
-    # Створює серверний сокет і переводить його в режим прослуховування.
-    with context.wrap_socket(server_socket, server_side=True) as secure_server:
-        receive()
-
+    with context.wrap_socket(server_socket, server_side=True) as secure_socket:
+        while True:
+            conn, addr = secure_socket.accept()
+            thread = threading.Thread(target=handle_client, args=(conn, addr))
+            thread.start()
+            logging.info(f"Active connections: {threading.active_count() - 1}")
 except Exception as e:
     logging.critical(f"Server failed to start: {e}")
     exit(1)
-finally:
-    with open("users.json", "w") as file:
-        json.dump(users, file)  # Збереження бази даних користувачів
-    print("Server shut down")
